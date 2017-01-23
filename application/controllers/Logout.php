@@ -10,17 +10,21 @@ class Logout extends CI_Controller
 			$this->session->sess_destroy();
 			redirect('user/login','refresh');
 		}
-		if(isset($_SESSION['admin']))
+		elseif(isset($_SESSION['admin']))
 		{
 			$this->session->unset_userdata('admin');
 			$this->session->sess_destroy();
 			redirect('admin/login','refresh');
 		}
-		if(isset($_SESSION['emp']))
+		elseif(isset($_SESSION['emp']))
 		{
 			$this->session->unset_userdata('emp');
 			$this->session->sess_destroy();
 			redirect('emp/login','refresh');
+		}
+		else
+		{
+			redirect($_SERVER['HTTP_REFERER']);
 		}
 	}
 }
