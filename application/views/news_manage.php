@@ -30,7 +30,7 @@ text-decoration: none;
                         <strong><?php echo $success; ?></strong>
                 </div><?php } ?>
             	<tr><td><h2>Title</h2></td></tr>
-            	<tr><td><input type="text" name="title" style="width: 15cm" required=""></td><!--<td><font color="red"><b>Do you want to delete a post ? <a href="#" style="text-decoration: none;">Click here</a></b></font></td>--></tr>
+            	<tr><td><input type="text" name="title" style="width: 15cm" required=""></td></tr>
             	<tr><td><h2>Post</h2></td></tr>
             	<tr><td><textarea name="content" style="width: 15cm; height: 15cm" required=""></textarea></td></tr>
             	<tr><td><button type="submit" class="btn btn-success">Publish</button>&nbsp<button type="reset" class="btn btn-danger">Reset</button></td></tr>
